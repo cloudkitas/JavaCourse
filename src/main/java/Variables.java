@@ -16,21 +16,37 @@ public class Variables {
         String (Reference Data type)
 
          */
+//
+//        int x; //declaration
+//
+//        x = 123; //assignment
+//
+//        int y = 123; // initialization
+//
+//        System.out.println(x + y);
+//
+//        float z = 3.14f;
+//        System.out.println(z);
+//
+//        boolean t = true;
+//        char symbol = '@';
+//        System.out.println(symbol);
 
-        int x; //declaration
+        numberOfNumbers(3);
+    }
 
-        x = 123; //assignment
+    private static void numberOfNumbers(int a){
 
-        int y = 123; // initialization
+        for (int i=1; i <= a; i++){
+//            for (int k = 0; k < i; k++){
+//
+//                System.out.println(i);
+//            }
+            System.out.println(i);
 
-        System.out.println(x + y);
+        }
 
-        float z = 3.14f;
-        System.out.println(z);
 
-        boolean t = true;
-        char symbol = '@';
-        System.out.println(symbol);
     }
 
 }
