@@ -11,6 +11,9 @@ public class ArrayPlay {
         printArray();
         int result = calcArraySum(arrayNum);
         System.out.println("The sum of your array is: " + result);
+        int[] createdPair = createPair();
+        int pairSum = calcPairSum(createdPair);
+        System.out.println("Your pair sum is: " + pairSum);
     }
 
     static void initializeArray(int arrSize){
@@ -50,4 +53,28 @@ public class ArrayPlay {
         }
         return arrSum;
     }
+
+    static int[] createPair() {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter 1st Number");
+        int x = input.nextInt();
+        System.out.println("Enter 2nd Number");
+        int y = input.nextInt();
+
+        int[] pair = {x,y};
+
+        int pairSum = 0;
+
+        return pair;
+    }
+
+    static int calcPairSum(int[] pair) {
+        int pairSum = 0;
+        for (int i = 0; i < pair.length; i++) {
+            pairSum = pairSum + pair[i];
+        }
+        return pairSum;
+    }
+
+    // test
 }
